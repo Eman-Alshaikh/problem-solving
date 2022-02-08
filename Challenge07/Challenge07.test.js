@@ -2,7 +2,7 @@
 
 const { objLat, cvFormatter, applicationsStatics, classesAvg } = require('./Challenge07');
 
-const data = {
+ const data = {
     SchoolName: "Al Farouk",
     Capacity: 1000,
     grades: [{
@@ -102,6 +102,7 @@ const data = {
         },
         ]
     },
+ 
     ],
 };
 
@@ -136,7 +137,7 @@ describe('Challenge07', () => {
 
 describe('Challenge07', () => {
     test('CV-Formatter', () => {
-        let first_Cv_Sample = [{
+         let first_Cv_Sample = [{
             firstName: "Jason",
             lastName: "James",
             yearsOfExperience: 20,
@@ -234,6 +235,7 @@ describe('Challenge07', () => {
             fullName: "Victoria Zachary",
             tech: "Python"
         }
+ 
         ]
         expect(cvFormatter(first_Cv_Sample)).toStrictEqual(received);
         expect(cvFormatter(second_Cv_Sample)).toStrictEqual(received2);
@@ -251,7 +253,8 @@ describe('Challenge07', () => {
             dotNet_Devs: 1,
             java_Devs: 1,
             totalApplicants: 5,
-            rejectedApplicants: 1,
+             rejectedApplicants: 1,
+ 
         }
 
         let received2 = {
@@ -262,7 +265,7 @@ describe('Challenge07', () => {
             totalApplicants: 5,
             rejectedApplicants: 1,
         }
-
+ 
         let first_Cv_Sample = [{
             firstName: "Jason",
             lastName: "James",
@@ -327,7 +330,8 @@ describe('Challenge07', () => {
         }
         ]
 
-        expect(applicationsStatics(first_Cv_Sample)).toStrictEqual(received);
+ 
+         expect(applicationsStatics(first_Cv_Sample)).toStrictEqual(received);
         expect(applicationsStatics(second_Cv_Sample)).toStrictEqual(received2);
     })
 
@@ -339,7 +343,7 @@ describe('Challenge07', () => {
             SchoolName: "Al Farouk",
             Capacity: 1000,
             grades: [{
-                grade: "First",
+                 grade: "First",
                 numberOFClasses: 3,
                 classes: [{
                     avg: 60,
@@ -435,11 +439,12 @@ describe('Challenge07', () => {
                 },
                 ]
             },
+ 
             ],
         };
 
         expect(classesAvg(data)).toStrictEqual(received);
 
     })
-})
-
+ })
+ 

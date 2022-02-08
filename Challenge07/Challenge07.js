@@ -18,7 +18,7 @@
 
 // ------------------------
 let obj = {
-    firstName: 'Jaber',
+     firstName: 'Jaber',
     lastName: 'Saleh',
     age: 67,
     hobby: 'Gaming and Sleeping'
@@ -37,7 +37,16 @@ return output = `my name is ${firstName}   ${lastName}I am ${age} YO, and I love
 
 };
 */
-// 2) ---------------------
+          firstName: 'Jaber',
+          lastName: 'Saleh',
+          age: 67,
+          hobby: 'Gaming and Sleeping'
+      }
+const objLat = (obj) => {
+    const output = `name: ${firstName}, surname: ${lastName}`
+};
+
+ // 2) ---------------------
 //
 //  Rekey is receiving info about applicants for his startup company (as array of objects), containing first name,
 //  last name, age and technology they know.
@@ -97,7 +106,7 @@ return output = `my name is ${firstName}   ${lastName}I am ${age} YO, and I love
 //  2- If one of the names is null dont add it to the full name
 
 // ------------------------
-//Rekey only cares about the full name and the technology
+ //Rekey only cares about the full name and the technology
 const cvFormatter = (arr) => {
 
     // write your code here
@@ -133,7 +142,15 @@ const cvFormatter = (arr) => {
 
 // 3) ---------------------
  
-//  Rekey wants to get statistic about the applicants
+ 
+const cvFormatter = (arr) => {
+    
+    // write your code here
+};
+
+// 3) ---------------------
+//
+ //  Rekey wants to get statistic about the applicants
 //  using the array of object you will be getting, return an object that has the following properties
 //
 // let result = {
@@ -148,7 +165,7 @@ const cvFormatter = (arr) => {
 // and fill it up based on the results
 
 //  Note that:
-//  1- rejectedApplicants are applications that has both the names empty or null and whoever have one year or less of Experience
+ //  1- rejectedApplicants are applications that has both the names empty or null and whoever have one year or less of Experience
 
 // ------------------------
 const applicationsStatics = (arr) => {
@@ -337,3 +354,4 @@ const applicationsStatics = (arr) => {
 
 
 
+ 
